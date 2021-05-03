@@ -1,0 +1,39 @@
+{
+  "name": "@graphql-tools/nest-graphql-endpoint",
+  "version": "7.0.0",
+  "description": "Nest an external GraphQL Endpoint",
+  "repository": {
+    "type": "git",
+    "url": "ardatan/graphql-tools"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "peerDependencies": {
+    "graphql": "^14.0.0 || ^15.0.0"
+  },
+  "buildOptions": {
+    "input": "./src/index.ts"
+  },
+  "dependencies": {
+    "@graphql-tools/merge": "^6.2.13",
+    "@graphql-tools/schema": "^7.1.4",
+    "@octokit/graphql-schema": "^10.36.0",
+    "abort-controller": "^3.0.0",
+    "dataloader": "2.0.0",
+    "node-fetch": "^2.6.1",
+    "tslib": "~2.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.10"
+  }
+}

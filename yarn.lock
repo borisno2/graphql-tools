@@ -2622,6 +2622,14 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@octokit/graphql-schema@^10.36.0":
+  version "10.36.1"
+  resolved "https://registry.yarnpkg.com/@octokit/graphql-schema/-/graphql-schema-10.36.1.tgz#d7345278902d94161cebdcefe9e2b7d99210e982"
+  integrity sha512-/OXfCi8g+XiviAc1lcv2ICxw9QFAZFWCelSpaSVFpnJWqUytYi9Jw+jSub/CA1ErCfUFtNWZKO8kvm5NjwDkbw==
+  dependencies:
+    graphql "^15.0.0"
+    graphql-tag "^2.10.3"
+
 "@polka/url@^1.0.0-next.9":
   version "1.0.0-next.11"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.11.tgz#aeb16f50649a91af79dbe36574b66d0f9e4d9f71"
@@ -3098,6 +3106,14 @@
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
+
+"@types/node-fetch@^2.5.10":
+  version "2.5.10"
+  resolved "https://registry.yarnpkg.com/@types/node-fetch/-/node-fetch-2.5.10.tgz#9b4d4a0425562f9fcea70b12cb3fcdd946ca8132"
+  integrity sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==
+  dependencies:
+    "@types/node" "*"
+    form-data "^3.0.0"
 
 "@types/node@*", "@types/node@^14.14.28":
   version "14.14.35"
@@ -3640,6 +3656,13 @@ abab@^2.0.3, abab@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.5.tgz#c0b678fb32d60fc1219c784d6a826fe385aeb79a"
   integrity sha512-9IK9EadsbHo6jLWIpxpR6pL0sazTXV6+SQv25ZB+F7Bj9mJNaOc4nCRabwd5M/JwmUa8idz6Eci6eKfJryPs6Q==
+
+abort-controller@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"
+  integrity sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
+  dependencies:
+    event-target-shim "^5.0.0"
 
 accepts@^1.3.7, accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.7:
   version "1.3.7"
@@ -6772,6 +6795,11 @@ eval@^0.1.4:
   dependencies:
     require-like ">= 0.1.1"
 
+event-target-shim@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
+  integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+
 eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
@@ -7715,7 +7743,7 @@ graphql-subscriptions@1.2.1:
   dependencies:
     iterall "^1.3.0"
 
-graphql-tag@2.12.4:
+graphql-tag@2.12.4, graphql-tag@^2.10.3:
   version "2.12.4"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.12.4.tgz#d34066688a4f09e72d6f4663c74211e9b4b7c4bf"
   integrity sha512-VV1U4O+9x99EkNpNmCUV5RZwq6MnK4+pGbRYWG+lA/m3uo7TSqJF81OkcOP148gFP6fzdl7JWYBrwWVTS9jXww==
@@ -7750,7 +7778,7 @@ graphql-ws@^4.4.1:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-4.4.1.tgz#69f472f362b57366af23265c6c6b967077b9d1dc"
   integrity sha512-kHgDohfRQFDdzXzLqsV4wZM141sO1ukaXW/RSLlmIUsxT4N3r/4eQYTbkeLd4yRXaDkmv/rYf1EHL09Y5KO+Uw==
 
-graphql@15.5.0, graphql@^14.5.3, graphql@^15.3.0:
+graphql@15.5.0, graphql@^14.5.3, graphql@^15.0.0, graphql@^15.3.0:
   version "15.5.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
   integrity sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
